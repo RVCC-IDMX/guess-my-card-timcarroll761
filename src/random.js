@@ -7,7 +7,8 @@
  * example: getRandomInt(1, 1) => 1
 9 */
 function getRandomInt(min, max) {
-  // write your code here & return value
+  const range = max - min;
+  return min + Math.floor(Math.random() * range);
 }
 
 export default getRandomInt;
